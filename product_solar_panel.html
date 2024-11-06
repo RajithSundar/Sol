@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Solar Panel 100W</title>
+  <style>
+    @font-face {
+        font-family: "gyatt";
+        src: url(Bebas-Regular.otf);
+    }
+    /* Basic Reset and Flex */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: gyatt; display: flex; flex-direction: column; align-items: center; }
+
+    /* Navigation Bar */
+    .navbar {
+      width: 100%; padding: 1rem; background-color: #333; color: #fff; display: flex; justify-content: space-between;
+    }
+    .navbar h1 { font-size: 1.5rem; }
+    .navbar nav { display: flex; gap: 1rem; }
+    .navbar a { color: #fff; text-decoration: none; padding: 0.5rem; transition: color 0.3s; }
+    .navbar a:hover { color: orange; }
+
+    /* Product Details Section */
+    .product-details { width: 90%; max-width: 800px; margin: 2rem auto; padding: 2rem; background-color: #f9f9f9; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); text-align: center; }
+    .product-details img { max-width: 100%; height: auto; border-radius: 8px; margin-bottom: 1rem; }
+    .product-details h2 { font-size: 2rem; color: #444; margin-bottom: 1rem; }
+    .product-details p { color: #666; line-height: 1.6; margin-bottom: 1.5rem; }
+    .purchase-btn {
+      padding: 0.8rem 2rem; background-color: orange; color: #fff; text-decoration: none; border-radius: 5px; font-weight: bold;
+      transition: background-color 0.3s;
+    }
+    .purchase-btn:hover { background-color: #ff6600; }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <h1>Solar Marketplace</h1>
+    <nav>
+      <a href="marketplace.html">Back to Marketplace</a>
+    </nav>
+  </header>
+
+  <!-- Product Details Section -->
+  <section class="product-details">
+    <img src="https://lumprodsta.blob.core.windows.net/prodcontainer/Images/b10f1ebb-4e14-45f4-823f-cf0ab0e1cf41_540W-Mono-perc-half-cut-panel_1%20%281%29.png" alt="Solar Panel 100W">
+    <h2>550W/24V Mono Perc Halfcut Solar Panel</h2>
+    <p>This high-efficiency 550W solar panel is perfect for corporate use, providing clean energy to power small home appliances. With durable construction, it is built to withstand harsh weather conditions.</p>
+    <a href="https://www.luminousindia.com/checkout/shipping-details" class="purchase-btn">Purchase</a>
+  </section>
+</body>
+</html>

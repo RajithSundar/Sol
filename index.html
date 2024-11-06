@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Solar Energy Awareness & Marketplace</title>
+  <style>
+    @font-face {
+        font-family: "gyatt";
+        src: url(Bebas-Regular.otf);
+    }
+
+    /* Basic Reset and Flex */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: gyatt; display: flex; flex-direction: column; align-items: center; }
+
+    /* Navigation Bar */
+    .navbar {
+      width: 100%; padding: 1rem; background-color: #333; color: #fff; display: flex; justify-content: space-between;
+    }
+    .navbar h1 { font-size: 1.5rem; }
+    .navbar nav { display: flex; gap: 1rem; }
+    .navbar a { color: #fff; text-decoration: none; padding: 0.5rem; transition: color 0.3s; }
+    .navbar a:hover { color: orange; }
+
+    /* Scrollbar Styling */
+    ::-webkit-scrollbar { width: 10px; }
+    ::-webkit-scrollbar-thumb {
+      background: #666; border-radius: 5px; transition: background 0.3s ease;
+    }
+    ::-webkit-scrollbar-thumb:hover { background: #444; }
+
+    /* Section Styling */
+    .section {
+      width: 90%; max-width: 1200px; margin: 2rem auto; padding: 2rem;
+      background: linear-gradient(to bottom, #f9f9f9, #e6f7ff); /* Initial Gradient */
+      transition: background 0.3s ease; /* Smooth background change */
+    }
+    .section h2 { text-align: center; font-size: 2rem; color: #444; margin-bottom: 1rem; }
+    .home-content { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; }
+
+    /* Content Box Styling */
+    .content-box {
+      padding: 1.5rem; border: 1px solid #ccc; border-radius: 8px; text-align: center;
+      background-color: #f9f9f9; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .content-box:hover {
+      transform: scale(1.05); box-shadow: 0px 4px 15px rgba(255, 165, 0, 0.5);
+      border-color: orange;
+    }
+    .content-box h3 { color: #555; font-size: 1.25rem; margin-bottom: 1rem; }
+    .content-box p { color: #666; font-size: 1rem; }
+    .content-box a { color: orange; text-decoration: none; font-weight: bold; transition: color 0.3s; }
+    .content-box a:hover { color: #ff6600; }
+
+    /* Footer for Citations */
+    .footer { text-align: center; margin-top: 2rem; font-size: 0.9rem; color: #444; }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <h1>Solar Awareness & Market</h1>
+    <a href="marketplace.html">Marketplace</a>
+    <nav>
+      <a href="introduction.html">Introduction</a>
+      <a href="benefits.html">Benefits</a>
+      <a href="applications.html">Applications</a>
+      
+    </nav>
+  </header>
+
+  <!-- Home Section -->
+  <section id="home" class="section">
+    <h2>Welcome to Solar Energy Awareness</h2>
+    <div class="home-content">
+      <!-- Box 1: Introduction to Solar Energy -->
+      <div id="introduction" class="content-box">
+        <h3>Introduction to Solar Energy</h3>
+        <p>Solar energy is one of the most abundant renewable resources available. By harnessing sunlight, solar energy provides a clean, sustainable alternative to fossil fuels.</p>
+        <p>Solar panels convert sunlight into electricity without emissions, helping reduce our carbon footprint. <a href="introduction.html">Learn more...</a></p>
+      </div>
+      
+      <!-- Box 2: Environmental and Economic Benefits -->
+      <div id="benefits" class="content-box">
+        <h3>Environmental and Economic Benefits</h3>
+        <p>Using solar energy significantly reduces greenhouse gases. In addition to helping the environment, it can also lower electricity bills and provide energy independence.</p>
+        <p>Governments worldwide offer incentives to promote solar installations, making it affordable. <a href="benefits.html">Learn more...</a></p>
+      </div>
+      
+      <!-- Box 3: Applications of Solar Energy -->
+      <div id="applications" class="content-box">
+        <h3>Applications of Solar Energy</h3>
+        <p>Solar energy is versatile, with applications from residential rooftops to large-scale farms. It powers everything from homes to solar water heaters, and even agricultural equipment.</p>
+        <p>In India, solar irrigation systems support farmers with sustainable, cost-effective water solutions. <a href="applications.html">Learn more...</a></p>
+      </div>
+    </div>
+    <div class="footer">
+      <p>By Rajith, Shashank, Kanak.</p>
+    </div>
+  </section>
+
+  <!-- JavaScript for Scroll Effects -->
+  <script>
+    window.addEventListener('scroll', () => {
+      const scrollPosition = window.scrollY;
+      const scrollbarColor = scrollPosition > 200 ? '#FF8C00' : '#666';
+      const backgroundColor = scrollPosition > 200 ? 'linear-gradient(to bottom, #ffecd2, #ffe9f1)' : 'linear-gradient(to bottom, #f9f9f9, #e6f7ff)';
+
+      // Change scrollbar thumb color
+      document.documentElement.style.setProperty('--scrollbar-thumb-color', scrollbarColor);
+      
+      // Apply gradient change to sections
+      document.querySelectorAll('.section').forEach(section => {
+        section.style.background = backgroundColor;
+      });
+    });
+  </script>
+</body>
+</html>

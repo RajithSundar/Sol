@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Solar Panel 100W</title>
+  <style>
+    @font-face {
+        font-family: "gyatt";
+        src: url(Bebas-Regular.otf);
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: gyatt; display: flex; flex-direction: column; align-items: center; }
+
+    .navbar {
+      width: 100%; padding: 1rem; background-color: #333; color: #fff; display: flex; justify-content: space-between;
+    }
+    .navbar h1 { font-size: 1.5rem; }
+    .navbar nav { display: flex; gap: 1rem; }
+    .navbar a { color: #fff; text-decoration: none; padding: 0.5rem; transition: color 0.3s; }
+    .navbar a:hover { color: orange; }
+
+    .product-details { width: 90%; max-width: 800px; margin: 2rem auto; padding: 2rem; background-color: #f9f9f9; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); text-align: center; }
+    .product-details img { max-width: 100%; height: auto; border-radius: 8px; margin-bottom: 1rem; }
+    .product-details h2 { font-size: 2rem; color: #444; margin-bottom: 1rem; }
+    .product-details p { color: #666; line-height: 1.6; margin-bottom: 1.5rem; }
+    .purchase-btn {
+      padding: 0.8rem 2rem; background-color: orange; color: #fff; text-decoration: none; border-radius: 5px; font-weight: bold;
+      transition: background-color 0.3s;
+    }
+    .purchase-btn:hover { background-color: #ff6600; }
+  </style>
+</head>
+<body>
+  <header class="navbar">
+    <h1>Solar Marketplace</h1>
+    <nav>
+      <a href="marketplace.html">Back to Marketplace</a>
+    </nav>
+  </header>
+
+  <!-- Product Details Section -->
+  <section class="product-details">
+    <img src="https://lumprodsta.blob.core.windows.net/prodcontainer/Images/3118c9fb-6014-4b93-8d4f-3aa6888604f1_165W_Poly_crystalline-panel_1%20%281%29.png" alt="Solar Panel 100W">
+    <h2>170W Solar Panel</h2>
+    <p>This high-efficiency 170W solar panel is perfect for residential use, providing clean energy to power small home appliances. With durable construction, it is built to withstand harsh weather conditions.</p>
+    <a href="https://www.luminousindia.com/product/170w12v-polycrystalline-solar-panel" class="purchase-btn">Purchase</a>
+  </section>
+</body>
+</html>
