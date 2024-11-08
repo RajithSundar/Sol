@@ -106,10 +106,10 @@
       const scrollbarColor = scrollPosition > 200 ? '#FF8C00' : '#666';
       const backgroundColor = scrollPosition > 200 ? 'linear-gradient(to bottom, #ffecd2, #ffe9f1)' : 'linear-gradient(to bottom, #f9f9f9, #e6f7ff)';
 
-      // Change scrollbar thumb color
+
       document.documentElement.style.setProperty('--scrollbar-thumb-color', scrollbarColor);
       
-      // Apply gradient change to sections
+
       document.querySelectorAll('.section').forEach(section => {
         section.style.background = backgroundColor;
       });
